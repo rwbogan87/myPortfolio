@@ -1,0 +1,39 @@
+#projects {
+    margin-bottom: 10px;
+    text-align: center;
+    height: 80vh;
+    background-image: linear-gradient(45deg,#003973,#E5E5BE);
+    display: flex;
+    position: relative;
+}
+
+#projects h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+#projects > div {
+    padding-bottom: 25px;
+    padding-top: 5px;
+    display: flex;
+    /* padding-right: 100px; */
+    background-color: black;
+}
+
+#projects > div > div {
+    align-content: center;
+    margin: auto;
+    vertical-align: middle;
+}
+
+#projects > div > div > div:nth-child(1) > div {
+    /* background: url(../assets/sportsapi.JPG); */
+}
+
+#projects > div > div > div:nth-child(2) > div {
+    /* background: url(../assets/netflixapi.JPG); */
+}
+
+#projects > div > div > div:nth-child(3) > div {
+    /* background: url(../assets/grimace.JPG); */
+}
+

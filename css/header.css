@@ -1,0 +1,54 @@
+.profile {
+    height: 175px;
+    width: 150px;
+    max-width: 175px;
+    background: url(../assets/profile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* margin-left: 50px; */
+    border: 3px solid black;
+    border-radius: 15px;
+    margin-bottom: 2px;
+}
+
+
+.jumbotron {
+    background: url(../assets/moonlake.jpg) center center;
+    background-size: cover;
+    height: 80vh;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+
+h4 {
+    font-family: 'Indie Flower', cursive;
+    font-size: medium;
+    font-style: italic;
+    padding-right: 20px;
+    color: white;
+}
+
+h4 span {
+    background-color: black;
+    opacity: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+}
+
+h1 span {
+    background-color: black;
+    opacity: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+}
+
+h3 span {
+    background-color: black;
+    opacity: 90%;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

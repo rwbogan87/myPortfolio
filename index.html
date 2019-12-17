@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ryan Bogan - Web Developer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/1main.css">
+    <link href="https://fonts.googleapis.com/css?family=Calistoga|Dancing+Script&display=swap" rel="stylesheet"></head>
+<body>
+    <!-- navBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href=>Projects<span class="sr-only">(Projects)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section id="home">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="profile"></div>
+                <h1 class="display-4"><span>Ryan Bogan</span></h1>
+                <h3 class="lead"><b><span>Junior Web Developer</span></b></h3>
+            </div>
+            <h4 id="quote" style="text-align: right"><span><b>“You’re only given a little spark of madness. You mustn’t lose it.” - Robin Williams</b></span></h4>
+        </div>
+    </section>
+    <!-- Body -->
+    <!-- Projects -->
+    <h1 class="samples">Work Samples</h1>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text"><b>Fun API Project</b></p>
+                      <p>Must allow unsafe scripts to run</p>
+                      <a href="https://sports-crimes.firebaseapp.com/" class="btn btn-primary">Open Page</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text"></p><b>HTML/CSS Project</b></p>
+                      <p>Recreate an existing site layout</p>
+                      <a href="https://rwbogan87.github.io/staticLayout/" class="btn btn-primary">Open Page</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"></p></p><b>Codepen Project</b></p>
+                        <p>CSS Creature using CSS and HTML</p>
+                        <a href="https://codepen.io/rwbogan87/full/ppaYvd/" class="btn btn-primary">Open Page</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title"></h5>
+                          <p class="card-text"></p><p><b>Ticketmaster API</b></p>
+                          <p>Insert comments here for project</p>
+                          <a href="#" class="btn btn-primary">Open Page</a>
+                        </div>
+                      </div>
+                    </div>
+              </div>                        
+        </div>
+    </section>
+    <br>
+    <!-- Contact Section -->
+    <h1 class="samples">Drop Me a Line</h1>
+    <section id="contact">
+            <div class="container">
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-12">
+                        <form action="https://formspree.io/rwbogan87@gmail.com.com" method="POST">
+                            <div class="control-group">
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" placeholder="Your Name" id="name" required
+                                        data-validation-required-message="Please enter your name" name="name">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group">
+                                    <label>Email Address</label>
+                                    <input type="email" class="form-control" placeholder="Your Email" id="email" required
+                                        data-validation-required-message="Please enter your email" name="_replyto">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="7" placeholder="Your Message to Me" id="message" required
+                                        data-validation-required-message="Please leave a message" name="message"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-lg btn-black">
+                                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
