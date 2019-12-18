@@ -11,7 +11,7 @@
 <body>
     <!-- navBar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="#" class="Home" id="Home">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -19,10 +19,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href=>Projects<span class="sr-only">(Projects)</span></a>
+                    <a class="nav-link" href="#Projects">Projects</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#About">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Resume">Social Links</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -34,14 +40,33 @@
             <div class="container">
                 <div class="profile"></div>
                 <h1 class="display-4"><span>Ryan Bogan</span></h1>
-                <h3 class="lead"><b><span>Junior Web Developer</span></b></h3>
+                <h3 class="lead"><b><span>Coder / Web Developer</span></b></h3>
+                <h4 id="quote" style="text-align: right"><span><b>“You’re only given a little spark of madness. You mustn’t lose it.” - Robin Williams</b></span></h4>
             </div>
-            <h4 id="quote" style="text-align: right"><span><b>“You’re only given a little spark of madness. You mustn’t lose it.” - Robin Williams</b></span></h4>
         </div>
     </section>
+    <br><br><br><br>
     <!-- Body -->
-    <br><br><br>
+    <!-- About Me -->
+    <br><br>
+    <a id="About"></a>
+    <h1 style="text-align: center; color: white; font-family: 'Dancing Script', cursive;">About Me<br><br></h1>
+    <section id="About">
+    <div class="aboutme">
+    <h5 style="text-align: center; color: white;">Welcome!<br>My name is Ryan Bogan, and I am a coder! Creating websites and projects that are meaningful and effective in their design is my passion, and I find great satisfaction in delivering an efficient, polished product.  My experience so far includes HTML, CSS, JavaScript, API calls, and soon React.  I also come from an operations management background with a Bachelor's Degree in Supply Chain Management from IUPUI, and have discovered that my passion and future will lie in coding and the future it brings!  I do look forward to bringing my management and problem solving experience into center stage when the time comes.<br><br>I have included some recent samples of my work below, please feel free to browse them and send me an email in the contact form below! I am always open to and welcome any suggestions, tips, or comments about my work or this career field.<br>Also feel free to check out my LinkedIn, GitHub profile, and resume links!</h5>
+    </div>
+    
+    </section>
+    <a id="Resume"></a>
+    <br><br><br><br>
+    <div class="resume">
+        <a href="https://www.linkedin.com/in/boganryan/"><i class="fab fa-linkedin" id="linkedin"></i></a>
+        <a href="https://github.com/rwbogan87?tab=repositories"><i class="fab fa-github-square" id="github"></i></a>
+        <a href="../newPortfolio/assets/resume.pdf"><i class="far fa-folder-open" id="folder"></i></a>
+    </div>
+    <br><br><br><br>
     <!-- Projects -->
+    <a id="Projects"></a>
     <h1 class="samples">Work Samples</h1>
     <section id="projects">
         <div class="container">
@@ -72,7 +97,7 @@
                         <h5 class="card-title"></h5>
                         <p class="card-text"></p></p><b>Codepen Project</b></p>
                         <p>CSS Creature using CSS and HTML</p>
-                        <a href="https://codepen.io/rwbogan87/full/ppaYvd/" class="btn" style="color: black; border: 2px solid black; background-color: white;">Fun CSS Creatures</a>
+                        <a href="https://codepen.io/rwbogan87/full/ppaYvd/" class="btn" style="color: black; border: 2px solid black; background-color: white;">Fun CSS Creature</a>
                       </div>
                     </div>
                   </div>
@@ -89,8 +114,9 @@
               </div>                        
         </div>
     </section>
-    <br>
+    <br><br><br>
     <!-- Contact Section -->
+    <a id="Contact"></a>
     <h1 class="samples">Drop Me a Line</h1>
     <section id="contact">
             <div class="container">
@@ -134,7 +160,9 @@
                 </div>
             </div>
     </section>
-
+    <br><br><br>
+    <a href="#Home"><div class="footer"><i class="fas fa-home" id="house"></i></div></a>
+<script src="https://kit.fontawesome.com/be26e9769f.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

@@ -10,6 +10,29 @@ body {
     font-family: 'Dancing Script', cursive;
 }
 
+.resume {
+    text-align: center;
+}
+
+#linkedin {
+    font-size: 60px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#github {
+    font-size: 60px;
+    color: white;
+    padding-right: 20px;
+}
+
+#folder {
+    font-size: 60px;
+    color: white;
+    padding-right: 20px;
+}
+
 /* the content of a job refers to the worth of the job and its relative contribution to the org's objectives */
 
 /* skills and comps can be used as the basis for developing an internal structure */
