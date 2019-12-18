@@ -2,9 +2,10 @@
     margin-bottom: 10px;
     text-align: center;
     height: 80vh;
-    background-image: linear-gradient(45deg,#003973,#E5E5BE);
+    background-image: linear-gradient( 172.5deg,  rgba(210,210,210,1) -10.1%, rgba(10,10,10,1) 62.4% );
     display: flex;
     position: relative;
+    
 }
 
 #projects h1 {
@@ -16,24 +17,46 @@
     padding-top: 5px;
     display: flex;
     /* padding-right: 100px; */
-    background-color: black;
+    color: transparent;
 }
 
 #projects > div > div {
     align-content: center;
     margin: auto;
     vertical-align: middle;
+    
 }
 
 #projects > div > div > div:nth-child(1) > div {
-    /* background: url(../assets/sportsapi.JPG); */
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+
+#projects > div > div > div:nth-child(1) > div:hover{
+    background-image: url(../assets/sportsapi.JPG);
+    background-size: cover;
+    transition: 4s;
 }
 
 #projects > div > div > div:nth-child(2) > div {
-    /* background: url(../assets/netflixapi.JPG); */
+    background: url(../assets/netflixapi.JPG);
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 15px;
 }
 
 #projects > div > div > div:nth-child(3) > div {
-    /* background: url(../assets/grimace.JPG); */
+    background: url(../assets/grimace.JPG);
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 15px;
+}
+
+#projects > div > div > div:nth-child(4) > div {
+    background: url(../../pokeAPI/public/assets/thumbnail.JPG);
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 15px;
 }
 
