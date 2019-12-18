@@ -8,8 +8,7 @@
     background-position: center center;
     /* margin-left: 50px; */
     border: 3px solid black;
-    border-radius: 15px;
-    margin-bottom: 2px;
+    border-radius: 5px;
 }
 
 
@@ -34,19 +33,22 @@ h4 span {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 2px;
+    border-radius: 20px;
 }
 
 h1 span {
     background-color: black;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 2px;
     border-radius: 10px;
+}
+
+h1 {
+    padding-bottom: 0px;
 }
 
 h3 span {
     background-color: black;
-    padding: 2px;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 10px;
