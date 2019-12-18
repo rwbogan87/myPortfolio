@@ -16,21 +16,27 @@ body {
 
 #linkedin {
     font-size: 60px;
-    color: white;
+    color: rgb(68, 180, 180);
     padding-left: 20px;
     padding-right: 20px;
 }
 
 #github {
     font-size: 60px;
-    color: white;
+    color: rgb(68, 180, 180);
     padding-right: 20px;
 }
 
 #folder {
     font-size: 60px;
-    color: white;
+    color: rgb(68, 180, 180);
     padding-right: 20px;
+}
+
+#resumetext {
+    margin-left: 150px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
 }
 
 /* the content of a job refers to the worth of the job and its relative contribution to the org's objectives */
