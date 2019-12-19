@@ -16,14 +16,13 @@
     background: url(../assets/moonlake.jpg) center center;
     background-size: cover;
     height: 80vh;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Crimson Text';
     color: white;
 }
 
 h4 {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Crimson Text';
     font-size: medium;
-    font-style: italic;
     padding-right: 20px;
     color: white;
 }
@@ -50,3 +49,7 @@ h3 span {
     padding: 7px;
     border-radius: 10px;
 }
+
+/* .textwrapper {
+    background: black;
+} */

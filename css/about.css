@@ -1,6 +1,5 @@
 .aboutme {
-    font-family: 'Indie Flower', cursive;
-    font-style: italic;
+    font-family: 'Crimson Text';
     padding-right: 20px;
     padding-left: 20px;
     color: white;
@@ -8,8 +7,7 @@
 
 /* fade black to white opposite of next section */
 #About {
-    background-image: linear-gradient( 168.5deg,  rgba(11,10,10,1) 26.3%, rgba(206,204,204,1) 114.3% );
-    display: flex;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(75,75,75,1) 51%, rgba(0,0,0,1) 85%);    display: flex;
     flex-direction: row;
 }
 
