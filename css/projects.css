@@ -7,10 +7,6 @@
     position: relative;
 }
 
-#projects h1 {
-    font-family: 'Dancing Script', cursive;
-}
-
 .samples {
     position: relative;
     text-align: center;
@@ -24,17 +20,16 @@
     padding-bottom: 25px;
     padding-top: 5px;
     display: flex;
-    /* padding-right: 100px; */
-    color: transparent;
 }
 
 #projects > div > div {
     align-content: center;
     margin: auto;
     vertical-align: middle;
-    
 }
 
+/* bring image preview to view on hover */
+/* not sure why transition 4s wont work, or why font color wont go transparent on hover*/
 #projects > div > div > div:nth-child(1) > div {
     background-color: black;
     border: 3px solid white;
@@ -44,6 +39,7 @@
 #projects > div > div > div:nth-child(1) > div:hover{
     background-image: url(../assets/sportsapi.JPG);
     background-size: cover;
+    color: transparent;
     transition: 4s;
 }
 
