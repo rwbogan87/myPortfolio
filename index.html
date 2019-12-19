@@ -7,7 +7,6 @@
     <title>Ryan Bogan - Web Developer</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/1main.css">
-    <link href="https://fonts.googleapis.com/css?family=Calistoga|Dancing+Script&display=swap" rel="stylesheet"></head>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
 <body>
     <!-- navBar -->
@@ -16,7 +15,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-            
+        <!-- nav goes hamburger on mobile, but stutters the bg on scroll? -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -39,15 +38,16 @@
     <section id="home">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
+                <!-- my photo -->
                 <div class="profile"></div>
                 <div class="textwrapper">
                 <h1 class="display-4"><span>Ryan Bogan</span></h1>
                 <h3 class="lead"><b><span>Coder / Web Developer</span></b></h3>
-                <!-- <h4 id="quote" style="text-align: right"><span>“You’re only given a little spark of madness. You mustn’t lose it.” - Robin Williams</span></h4> -->
                 </div>
             </div>
         </div>
     </section>
+    <!-- br's for proper spacing (see 1 section full vh at a time) -->
     <br><br><br><br>
     <!-- Body -->
     <!-- About Me -->
@@ -58,13 +58,14 @@
     <div class="aboutme">
     <h5 style="text-align: center; color: white;">Welcome!<br>My name is Ryan Bogan, and I am a coder! Creating websites and projects that are meaningful and effective in their design is my passion, and I find great satisfaction in delivering an efficient, polished product.  My experience so far includes HTML, CSS, JavaScript, API calls, and soon React.  I also come from an operations management background with a Bachelor's Degree in Supply Chain Management from IUPUI, and have discovered that my passion and future will lie in coding and the future it brings!  I do look forward to bringing my management and problem solving experience to center stage when the time comes.<br><br>I have included some recent samples of my work below, please feel free to browse them and send me an email in the contact form below. I am always open to and welcome any suggestions, tips, or comments about my work or this career field.<br><br>Also feel free to check out my LinkedIn, GitHub profile, and resume links!</h5>
     </div>
-    
     </section>
+    <!-- social media icons and resume -->
     <a id="Resume"></a>
     <br><br><br><br>
     <div class="resume">
         <a href="https://www.linkedin.com/in/boganryan/"><i class="fab fa-linkedin" id="linkedin"></i></a>
         <a href="https://github.com/rwbogan87?tab=repositories"><i class="fab fa-github-square" id="github"></i></a>
+        <!-- linked to onedrive with file-specific key to allow access but not priveleges to pdf -->
         <a href="https://onedrive.live.com/embed?cid=A5C55BAEDB1BDE39&resid=A5C55BAEDB1BDE39%21110506&authkey=APmU3hXcBGVRYyo&em=2"><i class="far fa-folder-open" id="folder"></i></a>
         <br><p id="resumetext">My Resume</p>
     </div>
@@ -75,17 +76,19 @@
     <section id="projects">
         <div class="container">
             <div class="row">
+                <!-- sports crimes api that requires you to allow unsafe scripts, still fun -->
                 <div class="col-sm-3">
                   <div class="card">
                     <div class="card-body">
                       <h5 class="card-title"></h5>
                       <p class="card-text"><b>Fun API Project</b></p>
-                      <!-- keep this text for sizing in case of reformat -->
+                      <!-- keep these texts for sizing in case of reformat, currently invisible -->
                       <p>Must allow unsafe scripts to run</p>
                       <a href="https://sports-crimes.firebaseapp.com/" class="btn" style="color: black; border: 2px solid black; background-color: white; font-family: 'Crimson Text';"><b>Sports Crimes API</b></a>
                     </div>
                   </div>
                 </div>
+                <!-- replica of netflix home page, 2 vhs -->
                 <div class="col-sm-3">
                   <div class="card" >
                     <div class="card-body">
@@ -96,6 +99,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- ugly CSS Creature, probably take down after submission -->
                 <div class="col-sm-3">
                     <div class="card">
                       <div class="card-body">
@@ -106,6 +110,7 @@
                       </div>
                     </div>
                   </div>
+                  <!-- John's Pokemon App :) -->
                   <div class="col-sm-3">
                       <div class="card">
                         <div class="card-body">
@@ -121,6 +126,7 @@
     </section>
     <br><br><br>
     <!-- Contact Section -->
+    <!-- grey the white background so it doesn't clash so hard with black -->
     <a id="Contact"></a>
     <h1 class="samples">Let's Connect!</h1>
     <section id="contact">
@@ -172,6 +178,7 @@
         <a href="https://onedrive.live.com/embed?cid=A5C55BAEDB1BDE39&resid=A5C55BAEDB1BDE39%21110506&authkey=APmU3hXcBGVRYyo&em=2"><i class="far fa-folder-open" id="folder"></i></a>
         <p id="resumetext">My Resume</p>
     </div>    
+    <!-- Gameify the footer, home icon except whole div is clickable to go to Home section -->
     <a href="#Home"><div class="footer"><i class="fas fa-home" id="house"></i></div></a>
 <script src="https://kit.fontawesome.com/be26e9769f.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

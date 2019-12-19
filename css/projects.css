@@ -11,6 +11,15 @@
     font-family: 'Dancing Script', cursive;
 }
 
+.samples {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Crimson Text';
+}
+
+/* difficulty targeting divs in this section, used element selector in browser */
+
 #projects > div {
     padding-bottom: 25px;
     padding-top: 5px;
@@ -74,5 +83,4 @@
     border: 3px solid white;
     border-radius: 15px;
 }
-
 

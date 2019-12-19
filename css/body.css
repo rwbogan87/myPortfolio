@@ -3,15 +3,11 @@ body {
     background-color:black;
 }
 
-.samples {
-    position: relative;
-    text-align: center;
-    color: white;
-    font-family: 'Crimson Text';
-}
+
 
 .resume {
     text-align: center;
+    font-family: 'Crimson Text';
 }
 
 #linkedin {
@@ -36,11 +32,6 @@ body {
 #resumetext {
     margin-left: 150px;
     color: white;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Crimson Text', cursive;
 }
-
-/* the content of a job refers to the worth of the job and its relative contribution to the org's objectives */
-
-/* skills and comps can be used as the basis for developing an internal structure */
-
 

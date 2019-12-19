@@ -5,13 +5,11 @@
     color: white;
 }
 
-/* fade black to white opposite of next section */
 #About {
     background: linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(75,75,75,1) 51%, rgba(0,0,0,1) 85%);    display: flex;
     flex-direction: row;
 }
 
-/* give white font a shadow to show on white bg */
 h5 {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
