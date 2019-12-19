@@ -31,6 +31,11 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#Contact">Contact</a>
                 </li>
+                <li class="spotifywrapper">
+                    <button type="button" class="nav-link" id="spotifybutton" data-toggle="modal" data-target="#exampleModal" style="color: white;">
+                        Open Spotify Popout (Current: Classical)
+                    </button>
+                </li>
             </ul>
         </div>
     </nav>
@@ -46,13 +51,32 @@
                 <h3 class="lead"><b><span>Coder / Web Developer</span></b></h3>
                 </div>
             </div>
+        
         </div>
     </section>
     <!-- br's for proper spacing (see 1 section full vh at a time) -->
-    <br><br><br><br>
+    <br>
     <!-- Body -->
+    <!-- modal for spotify -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content" style="color: white;background-color: black; text-align: center; font-family: 'Crimson Text'; ">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Spotify</h5>
+              <button type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWUvHZA1zLcjW" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" style="color: black; background-color: white;">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <!-- About Me -->
-    <br><br>
+    <br>
     <a id="About"></a>
     <a href="#Home"><div class=""><i class="fas fa-home" id="house"></i></div></a>
     <h1 style="text-align: center; color: white; font-family: 'Crimson Text', cursive;">About Me<br><br></h1>

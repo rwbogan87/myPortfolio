@@ -37,3 +37,13 @@ h3 span {
     padding: 7px;
     border-radius: 10px;
 }
+
+.spotifybutton {
+    background-color: black;
+    color: black;
+    border-style: 2px solid white;
+}
+
+#modal-body {
+    background-image: url(../assets/concert.jpg);
+}
