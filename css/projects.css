@@ -80,3 +80,6 @@
     border-radius: 15px;
 }
 
+.card-body {
+    color: white;;
+}

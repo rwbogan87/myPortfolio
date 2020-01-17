@@ -7,3 +7,10 @@
     align-content: center;
     font-size: 8vh;
 }
+
+.letsconnect {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Crimson Text';
+}
