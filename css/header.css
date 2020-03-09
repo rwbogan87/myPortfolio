@@ -1,49 +1,35 @@
 /* photo */
 .profile {
-    height: 175px;
-    width: 150px;
+    height: 250px;
+    width: 300px;
     max-width: 175px;
     background: url(../assets/profile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    border: 3px solid black;
-    border-radius: 20px;
+}
+
+.title {
+    margin: 0em;
+    padding: 0em;
+    font-size: 4em;
 }
 
 /* use jumbotron to float bg over black */
 .jumbotron {
-    background: url(../assets/moonlake.jpg) center center;
+    /* background: url(../assets/moonlake.jpg) center center; */
     background-size: cover;
-    height: 80vh;
+    min-height: 45vh;
     font-family: 'Crimson Text';
-    color: white;
 }
 
-/* putting black background behind white font for readability */
-h1 span {
-    background-color: black;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-h1 {
-    padding-bottom: 0px;
-}
-
-h3 span {
-    background-color: black;
-    padding: 7px;
-    border-radius: 10px;
-}
-
-.spotifybutton {
-    background-color: black;
-    color: black;
-    border-style: 2px solid white;
-}
-
-#modal-body {
-    background-image: url(../assets/concert.jpg);
+.headertext {
+    margin-right: 15vw;
+    text-align: center;
 }

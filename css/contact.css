@@ -1,4 +1,7 @@
 #contact {
-    color: white;
     font-family: 'Crimson Text';
+    background-color: rgb(233,236,239);
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    margin-bottom: -2em;
 }

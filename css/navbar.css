@@ -1,5 +1,26 @@
 body > nav {
-    background-color: black;
-    
+    margin-bottom: 0.5vh;
+    background-color:  rgb(50, 65, 129);
     font-family: 'Crimson Text';
+    display: flex;
+}
+
+#spotifybutton {
+    background: none;
+    color: white;
+    margin-top: 1vh;
+    cursor: pointer;
+}
+
+#spotifybutton:hover {
+    background-color: black;
+}
+
+#navlink {
+    border: 1px solid transparent;
+}
+
+#navlink:hover {
+    border-radius: 5px;
+    text-decoration: underline;
 }

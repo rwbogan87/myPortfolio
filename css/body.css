@@ -2,38 +2,43 @@ html {
     scroll-behavior: smooth;
   }
 
-body {
-    padding:5px;
-    background-color:black;
-}
-
 .resume {
     text-align: center;
     font-family: 'Crimson Text';
+    margin-bottom: 1em;
+    margin-top: -1em;
 }
 
 #linkedin {
-    font-size: 60px;
-    color: rgb(68, 180, 180);
-    padding-left: 20px;
-    padding-right: 20px;
+    font-size: 2em;
+    color: rgb(68, 89, 180);
+    padding-right: 2vw;
+}
+
+#linkedin:hover {
+    color: black;
 }
 
 #github {
-    font-size: 60px;
-    color: rgb(68, 180, 180);
-    padding-right: 20px;
+    font-size: 2em;
+    color: rgb(68, 89, 180);
+    padding-right: 2vw;
+}
+
+#github:hover {
+    color: black;
 }
 
 #folder {
-    font-size: 60px;
-    color: rgb(68, 180, 180);
-    padding-right: 20px;
+    font-size: 2em;
+    color: rgb(68, 89, 180);
+}
+
+#folder:hover {
+    color: black;
 }
 
 #resumetext {
-    margin-left: 150px;
-    color: white;
-    font-family: 'Crimson Text', cursive;
+    font-size: small;
 }
 

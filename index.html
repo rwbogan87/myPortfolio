@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ryan Bogan - Web Developer</title>
+    <title>Ryan Bogan</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/1main.css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
 <body>
     <!-- navBar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a href="#Home"><div class=""><i class="fas fa-home" id="house"></i></div></a>
-        <a class="navbar-brand" href="#" class="Home" id="Home">Home</a>
+        <a class="navbar-brand" href="#Home" class="Home" id="Home">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -20,20 +19,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#Projects">Projects</a>
+                    <a class="nav-link" href="#Projects" id="navlink" style="margin-right: 1em">Projects</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#About">About</a>
+                    <a class="nav-link" href="#About" id="navlink" style="margin-right: 1em">About</a>
                 </li>
-                <li class="nav-item active">
+                <!-- <li class="nav-item active">
                     <a class="nav-link" href="#Resume">Social Links</a>
-                </li>
+                </li> -->
                 <li class="nav-item active">
-                    <a class="nav-link" href="#Contact">Contact</a>
+                    <a class="nav-link" href="#Contact" id="navlink" style="margin-right: 1em">Contact</a>
                 </li>
                 <li class="spotifywrapper">
-                    <button type="button" class="nav-link" id="spotifybutton" data-toggle="modal" data-target="#exampleModal" style="color: white; background-color: black;">
-                        Open Spotify Popout
+                    <button type="button" id="spotifybutton" data-toggle="modal" data-target="#spotifyModal">
+                        Spotify Player
                     </button>
                 </li>
             </ul>
@@ -43,13 +42,20 @@
     <!-- Header -->
     <section id="home">
         <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <!-- my photo -->
+            <div class="header">
+                <div class="headertext">
+                    <h1 class="title"><span>Ryan Bogan</span></h1>
+                    <h3 class="lead">JavaScript Developer</h3>
+                    <h3 class="lead">B.S. Supply Chain Management</h3>
+                    <br/>
+                    <div class="resume">
+                        <a href="https://www.linkedin.com/in/boganryan/" target="_blank"><i class="fab fa-linkedin" id="linkedin"></i></a>
+                        <a href="https://github.com/rwbogan87?tab=repositories" target="_blank"><i class="fab fa-github-square" id="github"></i></a>
+                    <!-- linked to onedrive with file-specific key to allow access but not priveleges to resume pdf -->
+                        <a href="https://docs.google.com/document/d/1ZQfunTdv4V9XwnOTKBUwU9bRZ9FF4Fg1jD-z1GGf7Uk/edit?usp=sharing" target="_blank"><i class="far fa-file-pdf" id="folder"></i></a>
+                    </div>
+                    </div>
                 <div class="profile"></div>
-                <div class="textwrapper">
-                <h1 class="display-4"><span>Ryan Bogan</span></h1>
-                <h3 class="lead"><b><span>Web Developer</span></b></h3>
-                </div>
             </div>
         
         </div>
@@ -58,11 +64,11 @@
     <br>
     <!-- Body -->
     <!-- modal for spotify -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="spotifyModal" tabindex="-1" role="dialog" aria-labelledby="spotifyModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content" style="color: white;background-color: black; text-align: center; font-family: 'Crimson Text'; ">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Spotify</h5>
+              <h5 class="modal-title" id="spotifyModalLabel">Spotify</h5>
               <button type="button" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -75,31 +81,10 @@
         </div>
       </div>
     </div>
-    <!-- About Me -->
-    <br>
-    <a id="About"></a>
-    <a href="#Home"><div class=""><i class="fas fa-home" id="house"></i></div></a>
-    <h1 style="text-align: center; color: white; font-family: 'Crimson Text', cursive;">About Me<br><br></h1>
-    <section id="About">
-    <div class="aboutme">
-    <h5 style="text-align: center; color: white;">Welcome!<br>My name is Ryan Bogan, and I am a coder! Creating websites and projects that are meaningful and effective in their design is my passion, and I find great satisfaction in delivering an efficient, polished product.  My experience so far includes HTML, CSS, JavaScript, API calls, and soon React.  I also come from an operations management background with a Bachelor's Degree in Supply Chain Management from IUPUI, and have discovered that my passion and future will lie in coding and the future it brings!  I do look forward to bringing my management and problem solving experience to center stage when the time comes.<br><br>I have included some recent samples of my work below, please feel free to browse them and send me an email in the contact form below. I am always open to and welcome any suggestions, tips, or comments about my work or this career field.<br><br>Also feel free to check out my LinkedIn, GitHub profile, and resume links!</h5>
-    </div>
-    </section>
-    <!-- social media icons and resume -->
-    <a id="Resume"></a>
-    <br><br><br><br>
-    <div class="resume">
-        <a href="https://www.linkedin.com/in/boganryan/"><i class="fab fa-linkedin" id="linkedin"></i></a>
-        <a href="https://github.com/rwbogan87?tab=repositories"><i class="fab fa-github-square" id="github"></i></a>
-    <!-- linked to onedrive with file-specific key to allow access but not priveleges to resume pdf -->
-        <a href="https://docs.google.com/document/d/1ZQfunTdv4V9XwnOTKBUwU9bRZ9FF4Fg1jD-z1GGf7Uk/edit?usp=sharing"><i class="far fa-folder-open" id="folder"></i></a>
-        <br><p id="resumetext">My Resume</p>
-    </div>
-    <br><br><br><br>
-    <!-- Projects -->
     <a id="Projects"></a>
-    <a href="#Home"><div class=""><i class="fas fa-home" id="house"></i></div></a>
-    <h1 class="samples">Project Samples</h1>
+    <!-- <a href="#Home"><div class=""><i class="fas fa-home" id="house"></i></div></a> -->
+    <h3 class="samples">Projects</h3>
+    <br/>
     <!-- page section of portfolio -->
     <section id="projects">
         <!-- box to hold cards -->
@@ -115,7 +100,7 @@
                       <p class="card-text"><b>Fun API Project</b></p>
                       <!-- this API needs this option allowed -->
                       <p>Must allow unsafe scripts to run</p>
-                      <a href="https://sports-crimes.firebaseapp.com/" class="btn" style="color: black; border: 2px solid black; background-color: white; font-family: 'Crimson Text'; font-size: large;"><b>Sports Crimes API</b></a>
+                      <a href="https://sports-crimes.firebaseapp.com/" class="btn" style="color: black; background-color: white; font-family: 'Crimson Text'; font-size: large;"><b>Sports Crimes API</b></a>
                     </div>
                   </div>
                 </div>
@@ -126,7 +111,7 @@
                       <h5 class="card-title"></h5>
                       <p class="card-text"></p><b>HTML/CSS Project</b></p>
                       <p>Recreate an existing site layout</p>
-                      <a href="https://rwbogan87.github.io/staticLayout/" class="btn" style="color: black; border: 2px solid black; background-color: white; font-family: 'Crimson Text'; font-size: large;"><b>Netflix Static Copy</b></a>
+                      <a href="https://rwbogan87.github.io/staticLayout/" class="btn" style="color: black; background-color: white; font-family: 'Crimson Text'; font-size: large;"><b>Netflix Static Copy</b></a>
                     </div>
                   </div>
                 </div>
@@ -137,7 +122,7 @@
                         <h5 class="card-title"></h5>
                         <p class="card-text"></p></p><b>Codepen Project</b></p>
                         <p>CSS Creature using CSS and HTML</p>
-                        <a href="https://codepen.io/rwbogan87/full/ppaYvd/" class="btn" style="color: black; border: 2px solid black; background-color: white; font-family: 'Crimson Text'; font-size: large;"><b>Fun CSS Creature</b></a>
+                        <a href="https://codepen.io/rwbogan87/full/ppaYvd/" class="btn" style="color: black; background-color: white; font-family: 'Crimson Text'; font-size: large;"><b>Fun CSS Creature</b></a>
                       </div>
                     </div>
                   </div>
@@ -147,21 +132,39 @@
                         <div class="card-body">
                           <h5 class="card-title"></h5>
                           <p class="card-text"></p><p><span><b>Pokemon API</b></span></p>
-                          <p><span>Fetch from multiple API's to display evolution info</span></p>
-                          <a href="https://rwb-pokemonapi.firebaseapp.com/" class="btn" style="color: black; border: 2px solid black; background-color: white; font-family: 'Crimson Text'; font-size: large;"><b>Pokemon API</b></a>
+                          <p><span>Display Pokemon evolution info</span></p>
+                          <a href="https://rwb-pokemonapi.firebaseapp.com/" class="btn" style="color: black; background-color: white; font-family: 'Crimson Text'; font-size: large;"><b>Pokemon API</b></a>
                         </div>
                       </div>
                     </div>
               </div>                        
         </div>
     </section>
-    <br><br><br>
-    <!-- Contact Section -->
-    <!-- grey the white background so it doesn't clash so hard with black -->
+    <a id="About"></a>
+    <!-- <a href="#Home"><div class=""><i class="fas fa-home" id="house"></i></div></a> -->
+    <section id="About">
+    <h3 style="text-align: center; color: black; font-family: 'Crimson Text', cursive;">About Me<br><br></h3>
+    <div class="aboutme">
+    <h5>Creating websites and projects that are meaningful and effective in their design is my passion, and I pride myself on delivering an efficient, polished product.  I come from an operations management background with a Bachelor's Degree in Supply Chain Management from IUPUI, and recently graduated from Eleven Fifty Academy's immersive bootcamp.  I am a career changer, and am excited about bringing what I have to offer with me to the next step in this journey.<br><br>I have included some recent samples of my work below, please feel free to browse them and send me an email in the contact form further down.<br><br>Let's connect on LinkedIN! Send me an invite using the link below.</h5>
+    </div>
+    </section>
+    
+    <!-- social media icons and resume -->
+    <a id="Resume"></a>
+    <br><br>
+    <div class="resume">
+        <a href="https://www.linkedin.com/in/boganryan/" target="_blank"><i class="fab fa-linkedin" id="linkedin"></i></a>
+        <a href="https://github.com/rwbogan87?tab=repositories" target="_blank"><i class="fab fa-github-square" id="github"></i></a>
+    <!-- linked to onedrive with file-specific key to allow access but not priveleges to resume pdf -->
+        <a href="https://docs.google.com/document/d/1ZQfunTdv4V9XwnOTKBUwU9bRZ9FF4Fg1jD-z1GGf7Uk/edit?usp=sharing" target="_blank"><i class="far fa-file-pdf" id="folder"></i></a>
+        <br>
+    </div>
+    <!-- Projects -->
+    
     <a id="Contact"></a>
-    <a href="#Home"><div class=""><i class="fas fa-home" id="house"></i></div></a>
-    <h1 class="letsconnect">Let's Connect!</h1>
+    <!-- <a href="#Home"><div class=""><i class="fas fa-home" id="house"></i></div></a> -->
     <section id="contact">
+        <h3 class="letsconnect">Contact Form</h3>
 <div class="container">
     <br>
     <br>
@@ -186,7 +189,7 @@
                 </div>
                 <div class="control-group">
                     <div class="form-group">
-                        <textarea class="form-control" rows="7" placeholder="Your Message to Me" id="message" required
+                        <textarea class="form-control" rows="7" placeholder="Email Message" id="message" required
                             data-validation-required-message="Please leave a message" name="message" style="background-color: rgba(255, 255, 255, 0.781);"></textarea>
                         <p class="help-block text-danger"></p>
                     </div>
@@ -205,10 +208,9 @@
     </section>
     <br><br><br>
     <div class="resume">
-        <a href="https://www.linkedin.com/in/boganryan/"><i class="fab fa-linkedin" id="linkedin"></i></a>
-        <a href="https://github.com/rwbogan87?tab=repositories"><i class="fab fa-github-square" id="github"></i></a>
-        <a href="https://onedrive.live.com/embed?cid=A5C55BAEDB1BDE39&resid=A5C55BAEDB1BDE39%21110506&authkey=APmU3hXcBGVRYyo&em=2"><i class="far fa-folder-open" id="folder"></i></a>
-        <p id="resumetext">My Resume</p>
+        <a href="https://www.linkedin.com/in/boganryan/" target="_blank"><i class="fab fa-linkedin" id="linkedin"></i></a>
+        <a href="https://github.com/rwbogan87?tab=repositories" target="_blank"><i class="fab fa-github-square" id="github"></i></a>
+        <a href="https://onedrive.live.com/embed?cid=A5C55BAEDB1BDE39&resid=A5C55BAEDB1BDE39%21110506&authkey=APmU3hXcBGVRYyo&em=2" target="_blank"><i class="far fa-file-pdf" id="folder"></i></a>
     </div>    
     <!-- Gameify the footer, home icon except whole div is clickable to go to Home section -->
     <a href="#Home"><div class="footer"><i class="fas fa-home" id="house"></i></div></a>
