@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/1main.css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+</head>
 <body>
-    <!-- navBar -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#Home" class="Home" id="Home">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- nav goes hamburger on mobile, but stutters the bg on scroll? idk, keep it though -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -24,9 +24,6 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#About" id="navlink" style="margin-right: 1em">About</a>
                 </li>
-                <!-- <li class="nav-item active">
-                    <a class="nav-link" href="#Resume">Social Links</a>
-                </li> -->
                 <li class="nav-item active">
                     <a class="nav-link" href="#Contact" id="navlink" style="margin-right: 1em">Contact</a>
                 </li>
@@ -38,7 +35,6 @@
             </ul>
         </div>
     </nav>
-
     <!-- Header -->
     <section id="home">
         <div class="jumbotron jumbotron-fluid">
@@ -51,44 +47,53 @@
                     <div class="resume">
                         <a href="https://www.linkedin.com/in/boganryan/" target="_blank"><i class="fab fa-linkedin" id="linkedin"></i></a>
                         <a href="https://github.com/rwbogan87?tab=repositories" target="_blank"><i class="fab fa-github-square" id="github"></i></a>
-                    <!-- linked to onedrive with file-specific key to allow access but not priveleges to resume pdf -->
-                        <a href="https://docs.google.com/document/d/1ZQfunTdv4V9XwnOTKBUwU9bRZ9FF4Fg1jD-z1GGf7Uk/edit?usp=sharing" target="_blank"><i class="far fa-file-pdf" id="folder"></i></a>
+                         <!-- linked to onedrive with file-specific key to allow access but not priveleges to resume pdf -->
+                        <a href="https://docs.google.com/document/d/1ZQfunTdv4V9XwnOTKBUwU9bRZ9FF4Fg1jD-z1GGf7Uk/edit?usp=sharing" target="_blank"><i class="far fa-file-pdf" id="folder"><span class="resumetext">Current Resume</span></i></a>
                     </div>
-                    </div>
+                </div>
+                <!-- my photo -->
                 <div class="profile"></div>
             </div>
-        
         </div>
     </section>
-    <!-- br's for proper spacing (see 1 section full vh at a time) -->
     <br>
-    <!-- Body -->
     <!-- modal for spotify -->
     <div class="modal fade" id="spotifyModal" tabindex="-1" role="dialog" aria-labelledby="spotifyModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content" style="color: white;background-color: black; text-align: center; font-family: 'Crimson Text'; ">
-            <div class="modal-header">
-              <h5 class="modal-title" id="spotifyModalLabel">Spotify</h5>
-              <button type="button" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            <div class="modal-content" style="color: white;background-color: black; text-align: center; font-family: 'Crimson Text'; ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="spotifyModalLabel">Spotify</h5>
+                    <button type="button" data-dismiss="modal" aria-label="Close">
+                        <!-- puts the X in top corner button -->
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                 </div>
+                <div class="modal-body">
+                    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0wMD4IoQ5aJ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>          
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="color: black; background-color: white;">Close</button>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-                <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0wMD4IoQ5aJ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal" style="color: black; background-color: white;">Close</button>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
+
     <a id="Projects"></a>
-    <!-- <a href="#Home"><div class=""><i class="fas fa-home" id="house"></i></div></a> -->
     <h3 class="samples">Projects</h3>
+    <h5 class="samples" style="font-size: medium;">(click to expand)</h5>
     <br/>
-    <!-- page section of portfolio -->
     <section id="projects">
-        <!-- box to hold cards -->
-        <div class="container">
+
+        <!-- **SHIELD SELECTORS** -->
+        <div class="shielddiv">
+            <div class="goldshield" onclick="goldbadge()"></div><br/>
+            <div class="blueshield" onclick="bluebadge()"></div><br/>
+            <div class="redshield" onclick="redbadge()"></div><br/>
+        </div><br/><br/>
+        
+        <!-- **GOLD BADGE PROJECTS** -->
+        <div id="goldbadgediv" style="display: none;">
+            <h3 class="samples">Gold Badge Projects</h3><br/>
             <!-- row of cards -->
             <div class="row">
                 <!-- sports crimes api that requires you to allow unsafe scripts, still fun -->
@@ -118,59 +123,88 @@
                 <!-- ugly CSS Creature, probably take down after submission -->
                 <div class="col-sm-3">
                     <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="card-text"></p></p><b>Codepen Project</b></p>
-                        <p>CSS Creature using CSS and HTML</p>
-                        <a href="https://codepen.io/rwbogan87/full/ppaYvd/" class="btn" style="color: black; background-color: white; font-family: 'Crimson Text'; font-size: large;" target="_blank"><b>Fun CSS Creature</b></a>
-                      </div>
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text"></p></p><b>Codepen Project</b></p>
+                            <p>Creature using CSS and HTML</p>
+                            <a href="https://codepen.io/rwbogan87/full/ppaYvd/" class="btn" style="color: black; background-color: white; font-family: 'Crimson Text'; font-size: large;" target="_blank"><b>Fun CSS Creature</b></a>
+                        </div>
+                    </div>
+                </div>
+                  <!-- John's Pokemon App :) -->
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text"></p><p><span><b>Pokemon API</b></span></p>
+                            <p><span>Display Pokemon evolution info</span></p>
+                            <a href="https://rwb-pokemonapi.firebaseapp.com/" class="btn" style="color: black; background-color: white; font-family: 'Crimson Text'; font-size: large;" target="_blank"><b>Pokemon API</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>                        
+        </div>
+
+        <!-- **BLUE BADGE PROJECTS** -->
+        <div id="bluebadgediv" style="display: none;">
+            <h3 class="samples">Blue Badge Project</h3><br/>
+            <div class="row">
+                <div class="col-sm-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text"><b>Simple App with full CRUD</b></p>
+                      <p>Create simple recipe cards to be saved</p>
+                      <a href="https://rwb-recipebible-client.herokuapp.com/" class="btn" style="color: black; background-color: white; font-family: 'Crimson Text'; font-size: large;" target="_blank"><b>Recipe Bible</b></a>
                     </div>
                   </div>
-                  <!-- John's Pokemon App :) -->
-                  <div class="col-sm-3">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title"></h5>
-                          <p class="card-text"></p><p><span><b>Pokemon API</b></span></p>
-                          <p><span>Display Pokemon evolution info</span></p>
-                          <a href="https://rwb-pokemonapi.firebaseapp.com/" class="btn" style="color: black; background-color: white; font-family: 'Crimson Text'; font-size: large;" target="_blank"><b>Pokemon API</b></a>
-                        </div>
-                      </div>
-                    </div>
-              </div>                        
+                </div>
+            </div>                        
+        </div>
+
+        <!-- **RED BADGE PROJECTS** -->
+        <div id="redbadgediv" style="display: none;">
+            <h3 class="samples">Red Badge Project</h3><br/>
+        <div class="row">
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text"><b>Winkel Storefront</b></p>
+                  <p>Storefront with cart/orders/admin portal</p>
+                  <a href="https://winkel-drw.herokuapp.com/" class="btn" style="color: black; background-color: white; font-family: 'Crimson Text'; font-size: large;" target="_blank"><b>Winkel</b></a>
+                </div>
+              </div>
+            </div>
+        </div> 
         </div>
     </section>
+
     <a id="About"></a>
-    <!-- <a href="#Home"><div class=""><i class="fas fa-home" id="house"></i></div></a> -->
     <section id="About">
-    <h3 style="text-align: center; color: black; font-family: 'Crimson Text', cursive;">About Me<br><br></h3>
-    <div class="aboutme">
-    <h5>Creating websites and projects that are meaningful and effective in their design is my passion, and I pride myself on delivering an efficient, polished product.  I come from an operations management background with a Bachelor's Degree in Supply Chain Management from IUPUI, and recently graduated from Eleven Fifty Academy's immersive bootcamp.  I am a career changer, and am excited about bringing what I have to offer with me to the next step in this journey.<br><br>I have included some recent samples of my work below, please feel free to browse them and send me an email in the contact form further down.<br><br>Let's connect on LinkedIN! Send me an invite using the link below.</h5>
-    </div>
+        <h3 style="text-align: center; color: black; font-family: 'Crimson Text', cursive;">About Me<br><br></h3>
+        <div class="aboutme">
+            <h5>Creating websites and projects that are meaningful and effective in their design is my passion, and I pride myself on delivering an efficient, polished product.  I come from an operations management background with a Bachelor's Degree in Supply Chain Management from IUPUI, and recently graduated from Eleven Fifty Academy's immersive bootcamp.  I am a career changer, and am excited about bringing what I have to offer with me to the next step in this journey.<br><br>I have included some recent samples of my work below, please feel free to browse them and send me an email in the contact form further down.<br><br>Let's connect on LinkedIN! Send me an invite using the link below.</h5>
+        </div>
     </section>
-    
-    <!-- social media icons and resume -->
+
     <a id="Resume"></a>
     <br><br>
     <div class="resume">
         <a href="https://www.linkedin.com/in/boganryan/" target="_blank"><i class="fab fa-linkedin" id="linkedin"></i></a>
         <a href="https://github.com/rwbogan87?tab=repositories" target="_blank"><i class="fab fa-github-square" id="github"></i></a>
     <!-- linked to onedrive with file-specific key to allow access but not priveleges to resume pdf -->
-        <a href="https://docs.google.com/document/d/1ZQfunTdv4V9XwnOTKBUwU9bRZ9FF4Fg1jD-z1GGf7Uk/edit?usp=sharing" target="_blank"><i class="far fa-file-pdf" id="folder"></i></a>
+        <a href="https://docs.google.com/document/d/1ZQfunTdv4V9XwnOTKBUwU9bRZ9FF4Fg1jD-z1GGf7Uk/edit?usp=sharing" target="_blank"><i class="far fa-file-pdf" id="folder"><span class="resumetext">Current Resume</span></i></a>
         <br>
     </div>
-    <!-- Projects -->
     
     <a id="Contact"></a>
-    <!-- <a href="#Home"><div class=""><i class="fas fa-home" id="house"></i></div></a> -->
     <section id="contact">
         <h3 class="letsconnect">Contact Form</h3>
-<div class="container">
-    <br>
-    <br>
-    <div class="row">
-        <div class="col-12">
-            <form action="https://formspree.io/rwbogan87@gmail.com" method="POST">
+        <div class="container"><br/><br/>
+            <div class="row">
+            <div class="col-12">
+                <form action="https://formspree.io/rwbogan87@gmail.com" method="POST">
                 <div class="control-group">
                     <div class="form-group">
                         <label>Name</label>
@@ -201,22 +235,45 @@
                         Send Message
                     </button>
                 </div>
-            </form>
+                </form>
+            </div>
+            </div>
         </div>
-    </div>
-</div>
     </section>
     <br><br><br>
+
     <div class="resume">
         <a href="https://www.linkedin.com/in/boganryan/" target="_blank"><i class="fab fa-linkedin" id="linkedin"></i></a>
         <a href="https://github.com/rwbogan87?tab=repositories" target="_blank"><i class="fab fa-github-square" id="github"></i></a>
-        <a href="https://onedrive.live.com/embed?cid=A5C55BAEDB1BDE39&resid=A5C55BAEDB1BDE39%21110506&authkey=APmU3hXcBGVRYyo&em=2" target="_blank"><i class="far fa-file-pdf" id="folder"></i></a>
+        <a href="https://onedrive.live.com/embed?cid=A5C55BAEDB1BDE39&resid=A5C55BAEDB1BDE39%21110506&authkey=APmU3hXcBGVRYyo&em=2" target="_blank"><i class="far fa-file-pdf" id="folder"><span class="resumetext">Current Resume</span></i></a>
     </div>    
-    <!-- Gameify the footer, home icon except whole div is clickable to go to Home section -->
+
+    <!-- Footer button directs you to the home section -->
     <a href="#Home"><div class="footer"><i class="fas fa-home" id="house"></i></div></a>
+
+<script>
+    // display each badge and close other badges on click
+    goldbadge=()=>{
+        let x = document.getElementById("goldbadgediv");
+        let y = document.getElementById("bluebadgediv");
+        let z = document.getElementById("redbadgediv");
+        if (x.style.display==="none") {
+            x.style.display="inline-block";
+            y.style.display="none";
+            z.style.display="none";
+        } else {
+            x.style.display="none";
+            xa.style.opacity="75%";
+    }
+    }
+    bluebadge=()=>{let x = document.getElementById("bluebadgediv"); let y = document.getElementById("goldbadgediv"); let z = document.getElementById("redbadgediv"); if (x.style.display==="none") {x.style.display = "inline-block"; y.style.display="none"; z.style.display="none";} else {x.style.display="none";}}
+    redbadge=()=>{let x = document.getElementById("redbadgediv"); let y = document.getElementById("goldbadgediv"); let z = document.getElementById("bluebadgediv"); if (x.style.display==="none") {x.style.display = "inline-block"; y.style.display="none"; z.style.display="none";} else {x.style.display="none";}}
+</script>
+
 <script src="https://kit.fontawesome.com/be26e9769f.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 </html>

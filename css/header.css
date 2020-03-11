@@ -33,3 +33,21 @@
     margin-right: 15vw;
     text-align: center;
 }
+
+#folder .resumetext {
+    visibility: hidden;
+    font-family: 'Crimson Text';
+    background-color:  rgb(50, 65, 129);
+    width: 120px;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    font-size: medium;
+}
+
+#folder:hover .resumetext {
+    visibility: visible;
+}

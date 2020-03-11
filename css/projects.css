@@ -1,3 +1,4 @@
+/* projects wrapper */
 #projects {
     margin-bottom: 10px;
     text-align: center;
@@ -6,82 +7,111 @@
     position: relative;
 }
 
+/* full container of project samples */
 .samples {
     position: relative;
     text-align: center;
     color: black;
     font-family: 'Crimson Text';
-}
-
-/* difficulty targeting divs in this section, used element selector in browser */
-
-#projects > div {
-    padding-bottom: 25px;
-    padding-top: 5px;
-    display: flex;
-}
-
-#projects > div > div {
     align-content: center;
     margin: auto;
-    vertical-align: middle;
 }
 
 /* bring image preview to view on hover */
-/* not sure why transition 4s wont work, or why font color wont go transparent on hover*/
+/* sports crimes */
 #projects > div > div > div:nth-child(1) > div {
     background-color:  rgb(50, 65, 129);
-    border: 3px solid white;
-    border-radius: 15px;
-    transition: color 5s;
+    border-radius: 5px;
+    border: 3px solid rgb(203, 206, 209);
 }
 
 #projects > div > div > div:nth-child(1) > div:hover{
     background-image: url(../assets/sportsapi.JPG);
     background-size: cover;
-    color: transparent;
-    transition: 4s;
+    border: 3px solid rgb(203, 206, 209);
 }
 
+/* netflix static copy */
 #projects > div > div > div:nth-child(2) > div {
     background-color:  rgb(50, 65, 129);
-    border: 3px solid white;
-    border-radius: 15px;
+    border: 3px solid rgb(203, 206, 209);
+    border-radius: 5px;
 }
 
 #projects > div > div > div:nth-child(2) > div:hover{
     background-image: url(../assets/netflixapi.JPG);
     background-size: cover;
-    transition: 4s;
+    border: 3px solid rgb(203, 206, 209);
 }
 
+/* codepen css creature */
 #projects > div > div > div:nth-child(3) > div {
     background-color:  rgb(50, 65, 129);
-    border: 3px solid white;
-    border-radius: 15px;
+    border: 3px solid rgb(203, 206, 209);
+    border-radius: 5px;
 }
 
 #projects > div > div > div:nth-child(3) > div:hover{
     background-image: url(../assets/grimace.JPG);
     background-size: cover;
-    transition: 47s;
+    border: 3px solid rgb(203, 206, 209);
 }
 
+/* pokemon api evolver */
 #projects > div > div > div:nth-child(4) > div {
     background-color:  rgb(50, 65, 129);
-    border: 3px solid white;
-    border-radius: 15px;
+    border: 3px solid rgb(203, 206, 209);
+    border-radius: 5px;
 }
 
 #projects > div > div > div:nth-child(4) > div:hover{
     background-image: url(../assets/Pokemon.JPG);
+    border: 3px solid rgb(203, 206, 209);
     background-size: cover;
-    border: 3px solid white;
-    border-radius: 15px;
 }
 
+/* blue badge project container */
+#bluebadgediv > div {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+/* first project */
+#bluebadgediv > div > div > div > div {
+    background-color:  rgb(50, 65, 129);
+    border: 3px solid rgb(203, 206, 209);
+    background-size: cover;
+}
+
+#bluebadgediv > div > div > div > div:hover {
+    background-image: url(../assets/Recipe.JPG);
+    border: 3px solid rgb(203, 206, 209);
+    background-size: cover;
+}
+
+/* red badge projects container */
+#redbadgediv > div {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+/* first project */
+#redbadgediv > div > div > div > div {
+    background-color:  rgb(50, 65, 129);
+    border: 3px solid rgb(203, 206, 209);
+    background-size: cover;
+}
+
+#redbadgediv > div > div > div > div:hover {
+    background-image: url(../assets/winklelogo.png);
+    background-size: cover;
+}
+
+/* universal card styling for projects */
 .card-body {
-    color: white;;
+    color: white;
 }
 
 .card:hover {
@@ -90,4 +120,66 @@
 
 .card-body:hover {
     color: transparent;
+}
+
+.shielddiv {
+    display: flex;
+}
+
+/* badge stylings */
+.goldshield {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    background: url(../assets/gold.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    opacity: 75%;
+    display: inline-block;
+}
+
+.goldshield:hover {
+    opacity: 100%;
+}
+
+.blueshield {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    background: url(../assets/blue.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    opacity: 75%;
+    display: inline-block;
+}
+
+.blueshield:hover {
+    opacity: 100%;
+}
+
+.redshield {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    background: url(../assets/red.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    opacity: 75%;
+    display: inline-block;
+}
+
+.redshield:hover {
+    opacity: 100%;
 }
