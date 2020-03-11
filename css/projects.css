@@ -142,6 +142,17 @@
     display: inline-block;
 }
 
+.shieldspan {
+    font-family: 'Crimson Text';
+    background-color: rgb(55,55,55);
+    color: white;
+    margin: 0em;
+    padding: 0em;
+    line-height: 1em;
+    border-radius: 2px;
+    margin-top: -1em;
+}
+
 .goldshield:hover {
     opacity: 100%;
 }
