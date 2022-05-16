@@ -5,3 +5,12 @@
     padding-top: 0.5em;
     margin-bottom: -2em;
 }
+
+.buttonSubmit {
+    border: 1px solid grey;
+}
+
+.buttonSubmit:hover {
+    cursor: pointer;
+    background-color: darkgrey;
+}
