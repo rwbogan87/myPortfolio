@@ -1,6 +1,6 @@
 .footer {
-    background-color:  rgb(50, 65, 129);
     color: white;
+    background-color: black;
     display: flex;
     align-content: center;
     font-size: 1em;

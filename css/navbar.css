@@ -1,23 +1,23 @@
 body > nav {
-    margin-bottom: 0.5vh;
-    background-color:  rgb(50, 65, 129);
     font-family: 'Crimson Text';
+    background-color: black;
     display: flex;
+    flex-direction: row;
 }
+
+collapse navbar-collapse {
+    justify-content: space-between;
+}
+
 
 #spotifybutton {
     background: none;
     color: white;
-    margin-top: 1vh;
     cursor: pointer;
 }
 
 #spotifybutton:hover {
     background-color: black;
-}
-
-#navlink {
-    border: 1px solid transparent;
 }
 
 #navlink:hover {
