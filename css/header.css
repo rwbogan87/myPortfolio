@@ -5,6 +5,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    margin-bottom: 1em;
+    margin-right: 2em;
+    margin-left: 2em;
 }
 
 .title {
@@ -16,20 +19,25 @@
 /* use jumbotron to float bg over black */
 .jumbotron {
     /* background: url(../assets/moonlake.jpg) center center; */
+    display: flex;
+    justify-content: center;
     background-size: cover;
     min-height: 45vh;
     font-family: 'Crimson Text';
 }
 
 .header {
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .headertext {
-    margin-right: 15vw;
     text-align: center;
+    margin-right: 2em;
+    margin-left: 2em;
 }
 
 #folder .resumetext {
